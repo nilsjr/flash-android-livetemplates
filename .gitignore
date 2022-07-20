@@ -1,4 +1,4 @@
-/.idea
+.idea/
 *.iml
 
 /documentation/node_modules/
