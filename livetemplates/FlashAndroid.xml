@@ -1,0 +1,39 @@
+<templateSet group="FlashAndroid">
+    <template name="injc" value="@Inject constructor() " description="Inject constructor" toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="tfun" value="@Test&#10;fun `GIVEN $END$ WHEN THEN`() = runTest {&#10;    &#10;}"
+              description="Test fun" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="mfd" value="@Mock&#10;lateinit var $Name$" description="Mock field" toReformat="false"
+              toShortenFQNames="true">
+        <variable name="Name" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="injl" value="@Inject&#10;lateinit var " description="@Inject lateinit" toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="minj" value="@Mock&#10;lateinit var " description="@Mock lateinit" toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="imjl" value="@InjectMocks&#10;lateinit var " description="@InjectMock lateinit" toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+</templateSet>

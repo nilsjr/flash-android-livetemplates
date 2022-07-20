@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="5"
+    name="MVI Screen"
+    minApi="21"
+    minBuildApi="21"
+    description="Creates a new mvi screen">
+
+    <category value="Compose" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"
+        default="de.nilsdruyen.myapp" />
+
+    <parameter
+        id="screenName"
+        name="Screen name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${layoutToActivity(layoutName)}"
+        default="CustomScreen"
+        help="The name of the activity class to create" />
+
+    <parameter
+        id="viewModelClass"
+        name="ViewModel Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${underscoreToCamelCase(classToResource(screenName))}ViewModel"
+        help="The name of the view model class to create" />
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

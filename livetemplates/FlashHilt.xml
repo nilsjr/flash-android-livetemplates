@@ -1,0 +1,36 @@
+<templateSet group="FlashHilt">
+    <template name="prv" value="@Provides&#10;fun provides$NameCopy$(): $Name$ {&#10;    &#10;}" description="Provides"
+              toReformat="false" toShortenFQNames="true">
+        <variable name="Name" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NameCopy" expression="capitalize(Name)" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="bns" value="@Binds&#10;fun $NameCopy$Impl.bind$NameCopy$(): $Name$" description="Binds with name"
+              toReformat="false" toShortenFQNames="true">
+        <variable name="Name" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NameCopy" expression="capitalize(Name)" defaultValue="" alwaysStopAt="false"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="hbs"
+              value="@Binds&#10;@Singleton&#10;abstract fun bind$NameCopy$($nameLow$: $NameCopy$Impl): $Name$"
+              description="Hilt Bind Singleton" toReformat="false" toShortenFQNames="true">
+        <variable name="Name" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NameCopy" expression="capitalize(Name)" defaultValue="" alwaysStopAt="false"/>
+        <variable name="nameLow" expression="decapitalize(Name)" defaultValue="" alwaysStopAt="false"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="bnd" value="@Binds&#10;fun $NameCopy$Impl.bind(): $Name$" description="Binds" toReformat="false"
+              toShortenFQNames="true">
+        <variable name="Name" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NameCopy" expression="capitalize(Name)" defaultValue="" alwaysStopAt="false"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+</templateSet>
