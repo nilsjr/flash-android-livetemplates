@@ -1,7 +1,7 @@
 #!/bin/bash
-# Installs appcom interactive live template configuration
+# Installs flash live template configuration
 
-echo "Installing appcom interactive live templates configuration..."
+echo "Installing flash live templates configuration..."
 
 TEMPLATES="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/templates"
 

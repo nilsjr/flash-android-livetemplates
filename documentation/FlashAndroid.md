@@ -1,4 +1,4 @@
-# FlashAndroid
+# Android
 
 | Abbreviation | Description |
 | --- | --- |

@@ -2,7 +2,7 @@
 
 ![](https://media.giphy.com/media/VEFbVVKhY28GA/giphy.gif)
 
-This repository contains the current appcom interactive android live templates. Clone or download this repo and run the
+This repository contains android live templates. Clone or download this repo and run the
 install script to install them on your machine. Restart android studio and enjoy.
 
 Installation
@@ -19,7 +19,7 @@ Live templates
 Feedback
 -
 
-Contact us at <a href="mailto:develoment@appcom-interactive.de">develoment@appcom-interactive.de</a> for requests,
+Contact us at <a href="mailto:info@nilsdruyen.de">info@nilsdruyen.de</a> for requests,
 errors
 or any other form of feedback. Preferrably open an issue for this repository.
 
@@ -33,7 +33,7 @@ Run `node index.js` in /documentation/ directory
 
     The MIT License (MIT)
 
-    Copyright 2018 appcom interactive GmbH
+    Copyright 2022 Nils Druyen
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
     associated documentation files (the "Software"), to deal in the Software without restriction,

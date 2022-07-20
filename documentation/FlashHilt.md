@@ -1,4 +1,4 @@
-# FlashHilt
+# Hilt
 
 | Abbreviation | Description |
 | --- | --- |

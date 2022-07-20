@@ -1,6 +1,6 @@
-REM Installs appcom interactive live template configuration
+REM Installs flash interactive live template configuration
 @echo off
-echo Installing appcom interactive live templates configuration...
+echo Installing flash live templates configuration...
 
 setlocal enableDelayedExpansion
 
